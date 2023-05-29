@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "chatapp/proto";
+
+message FromClient {
+    string name =1;
+    string msg =2;
+}
+
+message FromServer{
+    string name =1;
+    string msg =2;
+}
+
+service chatapp_server{
+    rpc Chatroom (stream FromClient) returns (stream FromServer);
+}
