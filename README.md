@@ -4,7 +4,8 @@ This app is using gRPC bi-directinal streaming.
 Demo app deploy to serveless via google clound run.  
 
 # demo exe
-Download clientServer and run it.  
+※ Download clientServer and run it.  
+
 Step 1.  
     Enter your name.  
 
